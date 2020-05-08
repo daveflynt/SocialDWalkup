@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <meta charset="utf-8" />
+    <title>Sample Walkup Web App</title>
+    <link rel="stylesheet" type="text/css" href="src/css/main.css" />
+
+    <script src="src/js/main.js"></script>
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+<link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+  </head>
+  <body id="background" onload="hideRects()">
+ 
+      <div id="inService">
+          <p>Clicks: <a id="svcState">0</a></p>
+        <div class="buttonContainer">
+          <button id="guest" onclick="precorWalkup.complete()">Guest</button>
+          <button id="member" onclick="precorWalkup.requestSignIn()">
+          Member
+          </button>
+        </div>
+
+        <div id="white">
+          <svg  xmlns="http://www.w3.org/2000/svg" width="1024" height="768">
+            <rect width="1024" height="768"  />
+          </svg>
+        </div> 
+
+        <div id="black">
+          <svg  xmlns="http://www.w3.org/2000/svg" width="1024" height="768">
+            <rect x=0 y=0 width="1024" height="768"  />
+          </svg>
+        </div> 
+      </div>
+
+      <div id="socialDistance">
+        <div id="white2">
+          <svg  xmlns="http://www.w3.org/2000/svg" width="1024" height="768">
+            <rect width="1024" height="768"  />
+          </svg>
+        </div> 
+
+        <div id="black2">
+          <svg  xmlns="http://www.w3.org/2000/svg" width="1024" height="768">
+            <rect x=0 y=0 width="1024" height="768"  />
+          </svg>
+        </div> 
+        <div class="bigText">
+         <p> This equipment supports social distancing.</p> 
+         <p> Please select another.</p>
+        </div>
+      </div>
+      
+    <div id="configureButton" onClick="screenstate()">
+      &nbsp;<!-- <img src="./images/flex.jpg" /> -->
+    </div>    
+    
+  </body>
+</html>

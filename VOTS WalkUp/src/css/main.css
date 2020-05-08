@@ -1,0 +1,150 @@
+* {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#inService p {
+  display: none;
+}
+
+p {
+  font-family:  roboto;
+  color:rgb(255 0 0);
+  font-weight: 500;
+  font-size: 1.15em;
+}
+
+#background {
+  border-collapse: collapse;
+  width: 1024px;
+  height: 768px;
+  position: relative;
+}
+
+#socialDistance {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 1024px;
+  height: 768px;
+  background-image: url("../../images/SocialDwalkupblank.jpg");
+  background-repeat: no-repeat;
+  z-index: 120;
+}
+
+.bigText {
+  display: inline-block;
+  text-align: center;
+  width: 1024px;
+  font-size: 2em;
+  color:rgb(255 0 0);
+  position: fixed;
+  padding: 0px;
+  line-height: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  top: 150px;
+}
+
+#inService {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 1024px;
+  height: 768px;
+  background-image: url('../../images/prevention-procedures-walk-up-screen.jpg');
+  background-repeat: no-repeat;
+  z-index: 100;
+}
+
+#buttonContainer {
+  text-align: center;
+  position: fixed;
+  width: 984px;
+  top: 550px;
+}
+.buttonContainer {
+  text-align: center;
+  position: fixed;
+  width: 984px;
+  top: 600px;
+}
+
+#configureButton {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  border: 2px solid green;
+  z-index: 1000;
+}
+
+button {
+  display: inline-block;
+  margin: 5px 80px;
+  padding: 5px;
+
+  width: 275px;
+  height: 50px;
+  font-size: 26px;
+  border-radius: 4px;
+  border: none;
+  outline: 0;
+}
+
+button:active {
+  background: blue;
+  color: black;
+}
+
+@keyframes showWhiteAni{
+  0% {opacity: 0;}
+  10% {opacity: 0;}
+  15% {opacity: 1;}
+  100% {opacity: 1;}
+}
+
+@keyframes hideBlackAni{
+  0% {opacity: 1;}
+  10% {opacity: 1;}
+  15% {opacity: 0;}
+  100% {opacity: 0;}
+}
+
+#white {
+  position:absolute;
+  top: 0;
+  fill: white;
+  z-index: 1000;
+  animation: showWhiteAni 1s ease;
+}
+
+#black {
+  position:absolute;
+  top: 0;
+  fill: black;
+  z-index: 1000;
+  animation: hideBlackAni 1s ease;
+  Animation-delay: 2s;
+}
+
+  #white2 {
+  position:absolute;
+  top: 0;
+  fill: white;
+  z-index: 1000;
+  animation: showWhiteAni 1s ease;
+}
+    
+  #black2 {
+  position:absolute;
+  top: 0;
+  fill: black;
+  z-index: 1000;
+  animation: hideBlackAni 1s ease;
+  Animation-delay: 2s;
+}
+    
+           
