@@ -1,0 +1,355 @@
+* {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#inService p {
+  display: none;
+}
+
+p {
+  font-family:  roboto;
+  display:inline-block;
+  text-transform: uppercase;
+  color:rgb(255 0 0);
+  line-height: normal;
+  margin-top:20px;
+  margin-bottom: 20px;
+
+  width: 975px;
+  font-size: 1.25em;
+}
+
+#background {
+  border-collapse: collapse;
+  width: 1024px;
+  height: 768px;
+  position: relative;
+  margin-top: 0px;
+  margin-left: 0px;
+}
+
+#socialDistance {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 1024px;
+  height: 768px;
+  background-image: url("../../images/sd82poppy.jpg");
+  background-repeat: no-repeat;
+  z-index: 120;
+}
+
+.bigText {
+  display: inline-block;
+  position: absolute;
+  text-align: center;
+  width: 1024px;
+  font-size: 2em;
+  color:rgb(255 0 0);
+   padding: 0px;
+   margin-bottom: 0px;
+  line-height: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  top: 45px;
+  word-spacing: 10px;
+}
+
+#selectText {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  width: 1024px;
+  font-size: 1.5em;
+  color:rgb(255 0 0);
+   padding: 0px;
+   margin-bottom: 0px;
+  line-height: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  top: 420px;
+}
+
+#inService {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 1024px;
+  height: 768px;
+  background-image: url('../../images/inService82Bg.png');
+  background-repeat: no-repeat;
+  z-index: 100;
+}
+
+#colorBG{
+  display:inline-block;
+  height: 768px;
+  width: 1024px;
+  background-color:orangered;
+  z-index:1500;
+}
+
+#buttonContainer {
+  text-align: center;
+  position: fixed;
+  width: 1024px;
+  top: 650px;
+
+}
+.buttonContainer {
+  text-align: center;
+  position: fixed;
+  width: 1024px;
+  top: 640px;
+ 
+}
+
+#configureButton {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  width: 50px;
+  height: 50px;
+ /* border: 2px solid green;*/
+  z-index: 1000;
+}
+
+button {
+  display: inline-block;
+  margin: 5px 80px;
+  padding: 5px;
+  width: 275px;
+  height: 50px;
+  font-size: 26px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  background-color: white;
+  border: 1px solid black;
+  }
+
+button:active {
+  background: yellow;
+  color: black;
+}
+
+@keyframes showWhiteAni{
+  0% {opacity: 0;}
+  10% {opacity: 0;}
+  15% {opacity: 1;}
+  100% {opacity: 1;}
+}
+
+@keyframes hideBlackAni{
+  0% {opacity: 1;}
+  10% {opacity: 1;}
+  15% {opacity: 0;}
+  100% {opacity: 0;}
+}
+
+#white {
+  position:absolute;
+  top: 0;
+  fill: white;
+  z-index: 1000;
+  animation: showWhiteAni 1s ease;
+}
+
+#black {
+  position:absolute;
+  top: 0;
+  fill: black;
+  z-index: 1000;
+  animation: hideBlackAni 1s ease;
+  Animation-delay: 2s;
+}
+
+  #white2 {
+  position:absolute;
+  top: 0;
+  fill: white;
+  z-index: 1000;
+  animation: showWhiteAni 1s ease;
+}
+    
+  #black2 {
+  position:absolute;
+  top: 0;
+  fill: black;
+  z-index: 1000;
+  animation: hideBlackAni 1s ease;
+  Animation-delay: 2s;
+}
+       
+h1{
+  display: inline-block;
+  position: absolute;
+  text-align: center;
+  top:50px;
+  font-family: roboto;
+  margin-left: auto;
+  margin-right: auto;
+  width:1000px;
+  color: white;
+  font-size: 45px;
+}
+
+#cleaningText {
+  display: inline-block;
+  position: absolute;
+  font-family: roboto;
+  left: 450px;
+  top: 155px;
+  padding: 5px;
+  width: 500px;
+  line-height: 30px; 
+  color: white;
+  font-size: 25px;
+   }
+
+li{
+  margin-bottom: 10px;
+}
+
+#selector {
+  display:inline-block;
+  position:absolute;
+  top: 0px;
+  right:0px;
+  height: 100px;
+  width: 625px;
+  background-color: white;
+  border: 2px solid gray;
+  z-index:1400;
+}
+
+#poppySquare {
+  display:inline-block;
+ margin:25px;
+   height: 50px;
+  width: 50px;
+  background-color:orangered;
+  z-index:1500;
+}
+#greenSquare {
+  display:inline-block;
+  margin:25px;
+  height: 50px;
+  width: 50px;
+  background-color: #99ca3b;
+  z-index:1500;
+}
+#orangeSquare {
+  display:inline-block;
+  margin:25px;
+ height: 50px;
+  width: 50px;
+  background-color:orange;
+  z-index:1500;
+}
+#yellowSquare {
+  display:inline-block;
+  margin:25px;
+  height: 50px;
+  width: 50px;
+  background-color:#ffcc33;
+  z-index:1500;
+}
+#blueSquare {
+  display:inline-block;
+  margin:25px;
+  height: 50px;
+  width: 50px;
+  background-color: #00AACD;
+  z-index:1500;
+}
+#sdSquare{
+  display:inline-block;
+  position:absolute;
+  font-family:gotham, roboto;
+  font-size: 1.25em;
+  font-weight: bold;
+  color:gray;
+  right:10px;
+  top:25;
+  margin:25px;
+  height: 50px;
+  width: 50px;
+  border: 2px solid gray;
+  background-color:white;
+  z-index:1500;
+}
+
+#selectorText {
+  display:inline-block;
+  margin-top:10px;
+  Margin-left:15px;
+  margin-right:10;
+  width:25px;
+  height:50px;
+  font-family:gotham, roboto;
+  font-size: 1.5em;
+  font-weight: medium;
+  color:gray;
+}
+
+
+@media only screen and (max-height: 601px) {
+  #socialDistance {
+    height: 600px;
+    background-image: url("../../images/sd62poppy.jpg");
+  }
+  #inService {
+    height: 600px;
+    background-image: url('../../images/inService62Bg.png');
+  }
+  .buttonContainer {
+    top: 500px;
+  }
+
+
+  #cleaningText {
+    display: inline-block;
+    position: absolute;
+    font-family: roboto;
+    left: 320px;
+    top: 118px;
+    padding: 5px;
+    width: 650px;
+    line-height: 30px; 
+    color: white;
+    font-size: 25px;
+     }
+     
+     .bigText {
+      display: inline-block;
+      position: absolute;
+      text-align: center;
+      width: 1024px;
+      font-size: 2em;
+      color:rgb(255 0 0);
+       padding: 0px;
+       margin-bottom: 0px;
+      line-height: 20px;
+      margin-left: auto;
+      margin-right: auto;
+      top: 20px;
+      word-spacing: 10px;
+    }
+
+  #selectText {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  width: 1024px;
+  font-size: 1.5em;
+  color:rgb(255 0 0);
+   padding: 0px;
+   margin-bottom: 0px;
+  line-height: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  top: 320px;
+}
+}

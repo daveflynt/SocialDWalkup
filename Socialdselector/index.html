@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <meta charset="utf-8" />
+    <title>Sample Walkup Web App</title>
+    <link rel="stylesheet" type="text/css" href="src/css/main.css" />
+
+    <script src="src/js/main.js"></script>
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+<link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+  </head>
+  <body id="background" onload="hideRects()">
+ 
+
+    <div id=colorBG>
+    </div>
+    
+      <div id="inService">
+          <p>Clicks: <a id="svcState">0</a></p>
+          <h1>CoVid-19 Prevention Procedures</h1>
+          <div id=cleaningText>
+            <Ol>
+              <li>Avoid touching your eyes, mouth, and nose while exercising</li>
+              <li>Maintain recommended separation from others while exercising</li>
+              <li>Clean equipment after every use with provided supplies</li>
+              <li>Wash your hands with soap and water for 20 seconds before and after exercising</li>
+            </ol>
+          </div>
+        <div class="buttonContainer">
+          <button id="guest" onclick="precorWalkup.complete()">Just Workout</button>
+          <button id="member" onclick="precorWalkup.requestSignIn()">
+          Sign In
+          </button>
+        </div>
+             <div id="white">
+          <svg  xmlns="http://www.w3.org/2000/svg" width="1024" height="768">
+            <rect width="1024" height="768"  />
+          </svg>
+        </div> 
+        <div id="black">
+          <svg  xmlns="http://www.w3.org/2000/svg" width="1024" height="768">
+            <rect x=0 y=0 width="1024" height="768"  />
+          </svg>
+        </div> 
+      </div>
+      
+
+      <div id="socialDistance">
+        <div id="white2">
+          <svg  xmlns="http://www.w3.org/2000/svg" width="1024" height="768">
+            <rect width="1024" height="768"  />
+          </svg>
+        </div> 
+
+        <div id="black2">
+          <svg  xmlns="http://www.w3.org/2000/svg" width="1024" height="768">
+            <rect x=0 y=0 width="1024" height="768"  />
+          </svg>
+        </div> 
+      <div class="bigText">
+         <p> To maintain a healthy environment this equipment supports social distancing.</p> 
+         <p id=selectText >Please select another.</p>
+        </div>
+      </div>
+   
+    <div id="configureButton" onClick="screenState()">
+      
+    </div>    
+
+<div id="selector">
+  <div id="selectorButton" onClick="selector()"></div>
+
+  <div id="poppySquare" onClick="poppySelector()"></div>
+     
+  <div id="orangeSquare" onClick="orangeSelector()"></div>
+  
+  <div id="yellowSquare" onClick="yellowSelector()"></div>
+
+  <div id="greenSquare" onClick="greenSelector()"></div>
+ 
+  <div id="blueSquare" onClick="blueSelector()"></div>
+    
+
+  <div id="sdSquare" onClick="sdScreen()">
+    <p id=selectorText> 6</p>
+  </div>
+    
+  </div>
+
+</div>    
+
+      
+
+  </body>
+</html>
