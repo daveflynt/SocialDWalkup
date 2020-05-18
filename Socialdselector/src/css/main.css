@@ -113,7 +113,7 @@ p {
   width: 50px;
   height: 50px;
  /* border: 2px solid green;*/
-  z-index: 1300;
+  z-index: 1000;
 }
 
 button {
@@ -221,7 +221,7 @@ li{
   width: 625px;
   background-color: white;
   border: 2px solid gray;
-  z-index:1400;
+  z-index:1000;
 }
 
 #poppySquare {
@@ -230,7 +230,7 @@ li{
    height: 50px;
   width: 50px;
   background-color:orangered;
-  z-index:1500;
+  z-index:1000;
 }
 #greenSquare {
   display:inline-block;
@@ -238,7 +238,7 @@ li{
   height: 50px;
   width: 50px;
   background-color: #99ca3b;
-  z-index:1500;
+  z-index:1000;
 }
 #orangeSquare {
   display:inline-block;
@@ -246,7 +246,7 @@ li{
  height: 50px;
   width: 50px;
   background-color:orange;
-  z-index:1500;
+  z-index:1000;
 }
 #yellowSquare {
   display:inline-block;
@@ -254,7 +254,7 @@ li{
   height: 50px;
   width: 50px;
   background-color:#ffcc33;
-  z-index:1500;
+  z-index:1000;
 }
 #blueSquare {
   display:inline-block;
@@ -262,7 +262,7 @@ li{
   height: 50px;
   width: 50px;
   background-color: #00AACD;
-  z-index:1500;
+  z-index:1000;
 }
 #sdSquare{
   display:inline-block;
@@ -278,7 +278,7 @@ li{
   width: 50px;
   border: 2px solid gray;
   background-color:white;
-  z-index:1500;
+  z-index:1000;
 }
 
 #selectorText {
