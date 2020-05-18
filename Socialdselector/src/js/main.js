@@ -29,7 +29,6 @@ var precorWalkup = precorWalkup != undefined ? precorWalkup : mockPrecorWalkup;
 //A place to store the console type
 var theFe = JSON.parse(precorWalkup.getFitnessEquipmentInfo());
 var theConsoleType = theFe.consoleType;
-
 //On successful sign-in triggered by the walk-up, hide the Walkup app
 function myOnRequestSignInCompleted(success) {
   if (success) {
@@ -37,10 +36,20 @@ function myOnRequestSignInCompleted(success) {
   }
 }
 
+
 //When a successful sign in is initiated by hardware (e.g. RFID) onSignedIn will be called
 function myOnSignedIn() {
-  precorWalkup.complete();
+  // Check stored serviceState to see if console is available for use
+  var consoleOnline = precorWalkup.getItem("serviceState");
+  if (consoleOnline == "inService") {
+    // console is in service, allow sign in
+    precorWalkup.complete();
+  } else {
+    // console is out of service, block sign in
+    // nothing to do, just ignore the sign in attempt
+  }
 }
+
 
 function myComplete() {
   precorWalkup.complete();
@@ -52,11 +61,8 @@ function hideRects(){
   document.getElementById("white2").style.display = "none";
   document.getElementById("black2").style.display = "none";
   document.getElementById("selector").style.display = "none";
+ precorWalkup.setItem("serviceState", "socialDistance", false);
 }
-
-
-
-
 
 var svcState = 0;
 function screenState() {
@@ -65,16 +71,19 @@ function screenState() {
     if (svcState == 1) {
     document.getElementById("inService").style.display = "block";
     document.getElementById("socialDistance").style.display = "none"; 
-        svcState = svcState - 2;
+  precorWalkup.setItem("serviceState", "inService", false);
+  /*failing here as the svsState variable isnt getting reset*/
+    svcState = svcState - 2;
     } else {
     document.getElementById("selector").style.display = "block";
-    }
+        }
 }
 
 function sdScreen() {
   document.getElementById("inService").style.display = "none";
   document.getElementById("socialDistance").style.display = "block"; 
   document.getElementById("selector").style.display = "none";
+  precorWalkup.setItem("serviceState", "socialDistance", false);
 }
 function blueSelector() {
   document.getElementById("selector").style.display = "none";
@@ -138,7 +147,9 @@ function mySecs() {
   }
 }
 
-
+//Set the callbacks to listen for console sign in events
+precorWalkup.onRequestSignInCompleted = myOnRequestSignInCompleted;
+precorWalkup.onSignedIn = myOnSignedIn;
 
 
   
