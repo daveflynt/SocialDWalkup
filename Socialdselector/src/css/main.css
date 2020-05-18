@@ -38,7 +38,7 @@ p {
   height: 768px;
   background-image: url("../../images/SD82poppy.jpg");
   background-repeat: no-repeat;
-  z-index: 120;
+  z-index: 1200;
 }
 
 .bigText {
